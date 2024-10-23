@@ -32,5 +32,13 @@ while (whileLoopInteger <= 10)
     Console.WriteLine(whileLoopInteger);
     whileLoopInteger += 1;
 }
+Console.WriteLine();
 
+int doWhileLoopInteger = 1;
+Console.WriteLine("Do-while loop:");
+do
+{
+    Console.WriteLine(doWhileLoopInteger);
+    doWhileLoopInteger += 1;
+} while (doWhileLoopInteger <= 10);
 
