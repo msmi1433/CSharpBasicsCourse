@@ -41,4 +41,17 @@ do
     Console.WriteLine(doWhileLoopInteger);
     doWhileLoopInteger += 1;
 } while (doWhileLoopInteger <= 10);
+Console.WriteLine();
 
+Console.WriteLine("This for loop implements conditional logic to declare whether a number is odd or even");
+for (int i = 1; i <= 10; i++)
+{
+    if (i % 2 == 0)
+    {
+        Console.WriteLine($"{i} - even");
+    }
+    else
+    {
+        Console.WriteLine($"{i} - odd");
+    }
+}
