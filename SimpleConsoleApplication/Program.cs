@@ -55,3 +55,10 @@ for (int i = 1; i <= 10; i++)
         Console.WriteLine($"{i} - odd");
     }
 }
+Console.WriteLine();
+
+Console.WriteLine("You can also use the ternary (?) operator for conditional logic as follows:");
+for (int i = 1; i <= 10; i++)
+{
+     Console.WriteLine(i % 2 == 0 ? $"{i} - even" : $"{i} - odd");
+}
