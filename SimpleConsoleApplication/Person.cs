@@ -1,19 +1,13 @@
 namespace SimpleConsoleApplication;
 
-public class Person
+public class Person(string name, int age)
 {
-    void Main(string name, int age)
-    {
-        Name = name;
-        Age = age;
-        
-        Greet();
-    }
+    private readonly string _name = name;
+    private readonly int _age = age;
     
-    private string Name;
-    private int Age;
-    private void Greet()
+    public void Greet()
     {
-        Console.WriteLine($"Hello {Name}, you are {Age} years old.");
+        Console.WriteLine($"Hello {_name}, you are {_age} years old.");
     }
 }
+
