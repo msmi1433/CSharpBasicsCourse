@@ -4,6 +4,11 @@ bool booleanExample = true;
 double doubleExample = 3.3333333D;
 char charExample = 'C';
 
+bool IsEven(int integer)
+{
+    return integer % 2 == 0;
+}
+
 Console.WriteLine("Hello, World!");
 Console.WriteLine("Here are some examples of the basic data types in C#");
 Console.WriteLine();
@@ -43,17 +48,11 @@ do
 } while (doWhileLoopInteger <= 10);
 Console.WriteLine();
 
-Console.WriteLine("This for loop implements conditional logic to declare whether a number is odd or even");
+Console.WriteLine("This for loop implements an isEven(int) method to declare whether a number is odd or even");
 for (int i = 1; i <= 10; i++)
 {
-    if (i % 2 == 0)
-    {
-        Console.WriteLine($"{i} - even");
-    }
-    else
-    {
-        Console.WriteLine($"{i} - odd");
-    }
+    string iParity = IsEven(i) ? "even" : "odd";
+    Console.WriteLine($"{i} - {iParity}");
 }
 Console.WriteLine();
 
