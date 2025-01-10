@@ -1,4 +1,6 @@
-﻿int integerExample = 3;
+﻿using SimpleConsoleApplication;
+
+int integerExample = 3;
 string stringExample = "Goodbye, world!";
 bool booleanExample = true;
 double doubleExample = 3.3333333D;
@@ -61,3 +63,6 @@ for (int i = 1; i <= 10; i++)
 {
      Console.WriteLine(IsEven(i) ? $"{i} - even" : $"{i} - odd");
 }
+
+Person person = new Person("Myles", 28);
+person.Greet();
