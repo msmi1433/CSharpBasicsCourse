@@ -66,3 +66,11 @@ for (int i = 1; i <= 10; i++)
 
 Person person = new Person("Myles", 28);
 person.Greet();
+
+person.Age = 29;
+//Age is changed
+person.Greet();
+
+person.Age = -29;
+//Age is not changed as it is negative
+person.Greet();

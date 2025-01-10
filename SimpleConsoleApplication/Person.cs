@@ -7,7 +7,6 @@ public class Person(string name, int age)
 
     public int Age
     {
-        get => _age;
         set
         {
             if (value >= 0)
