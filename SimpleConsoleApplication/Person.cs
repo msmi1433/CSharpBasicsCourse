@@ -3,7 +3,15 @@ namespace SimpleConsoleApplication;
 public class Person(string name, int age)
 {
     private readonly string _name = name;
-    private readonly int _age = age;
+    private int _age = age;
+
+    public void SetAge(int age)
+    {
+        if (age >= 0)
+        {
+            _age = age;
+        }
+    }
     
     public void Greet()
     {
