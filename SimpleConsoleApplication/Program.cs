@@ -74,3 +74,6 @@ person.Greet();
 person.Age = -29;
 //Age is not changed as it is negative
 person.Greet();
+
+Student student = new Student("John", 18, "B+");
+student.Greet();
