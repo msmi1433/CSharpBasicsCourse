@@ -6,6 +6,7 @@ public class Student (string name, int age, string grade) : Person (name, age), 
 
     public new void Greet()
     {
+        base.Greet();
         Console.WriteLine($"Your grade is {_grade}.");
     }
 }
