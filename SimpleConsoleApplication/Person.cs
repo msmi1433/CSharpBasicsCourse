@@ -16,7 +16,7 @@ public class Person(string name, int age) : IGreetable
         }
     }
 
-    public void Greet()
+    public virtual void Greet()
     {
         Console.WriteLine($"Hello {_name}, you are {_age} years old.");
     }
