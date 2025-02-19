@@ -1,6 +1,6 @@
 namespace SimpleConsoleApplication;
 
-public class Person(string name, int age)
+public class Person(string name, int age) : IGreetable
 {
     private readonly string _name = name;
     private int _age = age;
