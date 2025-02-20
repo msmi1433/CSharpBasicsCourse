@@ -2,7 +2,7 @@ namespace SimpleConsoleApplication;
 
 public class Greeter : IGreetable
 {
-   public void Greet(string name, string age, string? grade = null)
+   public void Greet(string name, int age, string? grade = null)
    {
       if (grade == null)
       {
