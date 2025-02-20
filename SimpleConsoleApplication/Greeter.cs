@@ -1,6 +1,14 @@
 namespace SimpleConsoleApplication;
 
-public class Greeter
+public class Greeter : IGreetable
 {
-    
+   public void Greet(string name, string age, string? grade = null)
+   {
+      if (grade == null)
+      {
+         Console.WriteLine($"Hello {name}, you are {age} years old.");
+      }
+      else
+         Console.WriteLine($"Hello {name}, you are {age} years old. Your grade is {grade}.");
+   } 
 }
