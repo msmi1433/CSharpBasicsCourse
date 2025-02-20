@@ -16,7 +16,7 @@ public class Person(string name, int age)
         }
     }
 
-    public void Greet()
+    public virtual void Greet()
     {
         var greeter = new Greeter();
         greeter.Greet(_name, _age);

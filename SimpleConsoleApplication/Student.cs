@@ -6,7 +6,7 @@ public class Student (string name, int age, string grade) : Person (name, age)
 
     public override void Greet()
     {
-        base.Greet();
-        Console.WriteLine($"Your grade is {_grade}.");
+        var greeter = new Greeter();
+        greeter.Greet(name, age, _grade);
     }
 }
