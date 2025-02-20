@@ -9,6 +9,8 @@ public class Greeter : IGreetable
          Console.WriteLine($"Hello {name}, you are {age} years old.");
       }
       else
+      {
          Console.WriteLine($"Hello {name}, you are {age} years old. Your grade is {grade}.");
-   } 
+      }
+   }
 }
