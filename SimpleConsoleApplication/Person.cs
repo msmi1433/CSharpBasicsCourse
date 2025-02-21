@@ -1,6 +1,6 @@
 namespace SimpleConsoleApplication;
 
-public class Person(string name, int age) : IGreetable
+public class Person(string name, int age, IGreetable greeter)
 {
     private readonly string _name = name;
     private int _age = age;
@@ -18,7 +18,7 @@ public class Person(string name, int age) : IGreetable
 
     public virtual void Greet()
     {
-        Console.WriteLine($"Hello {_name}, you are {_age} years old.");
+        greeter.Greet(_name, _age);
     }
 }
 

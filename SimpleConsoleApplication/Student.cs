@@ -1,6 +1,6 @@
 namespace SimpleConsoleApplication;
 
-public class Student (string name, int age, string grade) : Person (name, age)
+public class Student (string name, int age, IGreetable greeter, string grade) : Person (name, age, greeter)
 {
     private readonly string _grade = grade;
 
