@@ -1,6 +1,6 @@
 namespace SimpleConsoleApplication;
 
-interface IGreetable
+public class PersonGreeter
 {
-    void Greet();
+    
 }
