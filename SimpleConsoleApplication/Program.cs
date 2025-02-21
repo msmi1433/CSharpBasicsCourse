@@ -64,7 +64,7 @@ for (int i = 1; i <= 10; i++)
      Console.WriteLine(IsEven(i) ? $"{i} - even" : $"{i} - odd");
 }
 
-Person person = new Person("Myles", 28);
+Person person = new Person("Myles", 28, new Greeter());
 person.Greet();
 
 person.Age = 29;
@@ -75,5 +75,5 @@ person.Age = -29;
 //Age is not changed as it is negative
 person.Greet();
 
-Student student = new Student("John", 18, "B+");
+Student student = new Student("John", 18, new Greeter(), "B+");
 student.Greet();
