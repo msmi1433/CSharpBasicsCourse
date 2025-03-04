@@ -1,6 +1,6 @@
 namespace SimpleConsoleApplication;
 
-public class Greeter () : IGreetable
+public class Greeter () 
 {
     public void Greet(string name, int age)
     {
