@@ -2,8 +2,8 @@ namespace SimpleConsoleApplication;
 
 public class Greeter () 
 {
-    public void Greet(string name, int age)
+    public void Greet(string greetingString)
     {
-        Console.WriteLine($"Hello {name}, you are {age} years old.");
+        Console.WriteLine(greetingString);
     }
 }
