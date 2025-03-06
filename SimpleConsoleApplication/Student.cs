@@ -4,8 +4,8 @@ public class Student (string name, int age, Greeter greeter, string grade) : Per
 { 
     public override void Greet()
     {
-        var greetingString = $"Hello {name} - you are {age} years old. Your grade is {grade}";
-        greeter.Greet(greetingString);
-
+        var greetingString = $"Hello {Name} - you are {Age} years old. Your grade is {grade}";
+        Greeter.Greet(greetingString);
+        
     }
 }

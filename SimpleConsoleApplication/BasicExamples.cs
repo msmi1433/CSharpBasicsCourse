@@ -2,11 +2,11 @@ namespace SimpleConsoleApplication;
 
 public class BasicExamples
 {
-    int integerExample = 3;
-    string stringExample = "Goodbye, world!";
-    bool booleanExample = true;
-    double doubleExample = 3.3333333D;
-    char charExample = 'C';
+    private const int IntegerExample = 3;
+    private const string StringExample = "Goodbye, world!";
+    private const bool BooleanExample = true;
+    private const double DoubleExample = 3.3333333D;
+    private const char CharExample = 'C';
 
     private bool IsEven(int integer)
     {
@@ -22,12 +22,12 @@ public class BasicExamples
     {
         Console.WriteLine("Here are some examples of the basic data types in C#");
         Console.WriteLine();
-        Console.WriteLine($"This is an integer: '{integerExample}'");
-        Console.WriteLine($"Here is a string: '{stringExample}'");
-        Console.WriteLine($"Booleans can be 'False' or: '{booleanExample}'");
-        Console.WriteLine($"Finally, a double: '{doubleExample}'");
+        Console.WriteLine($"This is an integer: '{IntegerExample}'");
+        Console.WriteLine($"Here is a string: '{StringExample}'");
+        Console.WriteLine($"Booleans can be 'False' or: '{BooleanExample}'");
+        Console.WriteLine($"Finally, a double: '{DoubleExample}'");
         Console.WriteLine();
-        Console.WriteLine($"As a bonus, here is a char: '{charExample}'");
+        Console.WriteLine($"As a bonus, here is a char: '{CharExample}'");
     }
 
     public void PrintLoops()
@@ -36,13 +36,13 @@ public class BasicExamples
         Console.WriteLine();
 
         Console.WriteLine("For loop:");
-        for (int i = 1; i <= 10; i++)
+        for (var i = 1; i <= 10; i++)
         {
             Console.WriteLine(i);
         }
         Console.WriteLine();
 
-        int whileLoopInteger = 1;
+        var whileLoopInteger = 1;
         Console.WriteLine("While loop:");
         while (whileLoopInteger <= 10)
         {
@@ -51,7 +51,7 @@ public class BasicExamples
         }
         Console.WriteLine();
 
-        int doWhileLoopInteger = 1;
+        var doWhileLoopInteger = 1;
         Console.WriteLine("Do-while loop:");
         do
         {
@@ -64,9 +64,9 @@ public class BasicExamples
     public void PrintConditionalLogic()
     {
         Console.WriteLine("This for loop implements an isEven(int) method to declare whether a number is odd or even");
-        for (int i = 1; i <= 10; i++)
+        for (var i = 1; i <= 10; i++)
         {
-            string iParity = IsEven(i) ? "even" : "odd";
+            var iParity = IsEven(i) ? "even" : "odd";
             Console.WriteLine($"{i} - {iParity}");
         }
         Console.WriteLine();
