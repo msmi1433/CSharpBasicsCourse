@@ -1,12 +1,11 @@
 namespace SimpleConsoleApplication;
 
-public class Student (string name, int age, string grade) : Person (name, age)
-{
-    private readonly string _grade = grade;
-
+public class Student (string name, int age, Greeter greeter, string grade) : Person (name, age, greeter)
+{ 
     public override void Greet()
     {
-        base.Greet();
-        Console.WriteLine($"Your grade is {_grade}.");
+        var greetingString = $"Hello {Name} - you are {Age} years old. Your grade is {grade}";
+        Greeter.Greet(greetingString);
+        
     }
 }
